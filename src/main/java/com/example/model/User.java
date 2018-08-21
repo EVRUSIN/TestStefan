@@ -68,13 +68,12 @@ public class User {
         if (this == o) return true;
         if (!(o instanceof User)) return false;
         User user = (User) o;
-        return Objects.equals(login, user.login) &&
-                Objects.equals(password, user.password);
+        return Objects.equals(login, user.login);
     }
 
     @Override
     public int hashCode() {
 
-        return Objects.hash(login, password);
+        return Objects.hash(login);
     }
 }
